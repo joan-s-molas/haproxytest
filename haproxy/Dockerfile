@@ -12,6 +12,7 @@ RUN set -exo pipefail \
 
 COPY docker-entrypoint.sh /
 COPY rsyslog.conf /etc/rsyslog.d/
+COPY user.pem /etc/user.pem
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
